@@ -7,8 +7,7 @@ from cryptography.fernet import Fernet
 
 app = Flask(__name__)
 
-cors = CORS()
-cors.init_app(app)
+CORS(app)
 
 # Decrypt service-account-info.bin and save as service-account-info.json
 DECRYPT_KEY = os.environ.get('DECRYPT_KEY', '').encode()
