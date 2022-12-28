@@ -13,7 +13,7 @@ cors.init_app(app)
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = json.loads(os.environ.get('GOOGLE_APPLICATION_CREDENTIALS', ''))
 BQ_Client = bigquery.Client()
 
-API_KEY = os.environ.get('API_KEY', 'oopcqmbblx2y62i7')
+API_KEY = os.environ.get('API_KEY', '')
 
 
 # Register Flask blueprint
