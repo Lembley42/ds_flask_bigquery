@@ -3,7 +3,7 @@ from flask import Flask, jsonify, request, Blueprint
 from flask_cors import CORS
 from google.cloud import bigquery
 import os, json
-s
+
 
 app = Flask(__name__)
 
