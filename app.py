@@ -11,7 +11,7 @@ cors = CORS()
 cors.init_app(app)
 
 # Decrypt service-account-info.bin and save as service-account-info.json
-DECRYPT_KEY = os.environ('DECRYPT_KEY', '').encode()
+DECRYPT_KEY = os.environ.get('DECRYPT_KEY', '').encode()
 fernet = Fernet(DECRYPT_KEY)
 with open('service-account-info.bin', 'rb') as f:
     encrypted_data = f.read()
