@@ -39,6 +39,5 @@ def api(api_key, dataset_id, table_id):
         return jsonify(data), 200
 
 
-
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
